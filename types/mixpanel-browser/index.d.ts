@@ -1,4 +1,4 @@
-// Type definitions for mixpanel-browser 2.40
+// Type definitions for mixpanel-browser 2.43
 // Project: https://github.com/mixpanel/mixpanel-js
 // Definitions by: Carlos López <https://github.com/karlos1337>
 //                 Ricardo Rodrigues <https://github.com/RicardoRodrigues>
@@ -56,6 +56,7 @@ export interface RegisterOptions {
 export interface Config {
     api_host: string;
     api_method: string;
+    api_payload_format: "base64" | "json";
     api_transport: string;
     app_host: string;
     autotrack: boolean;
