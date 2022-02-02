@@ -354,3 +354,13 @@ mixpanel.track_with_groups('event', { name: 'Name' }, { group: ['value'] }, resp
     } else if (response.status === 0 && response.error.includes('bad')) {
     }
 });
+mixpanel.init('YOUR PROJECT TOKEN', {
+    api_payload_format: 'json',
+});
+mixpanel.init('YOUR PROJECT TOKEN', {
+    api_payload_format: 'base64',
+});
+mixpanel.init('YOUR PROJECT TOKEN', {
+    // $ExpectError
+    api_payload_format: 'bytes',
+});
